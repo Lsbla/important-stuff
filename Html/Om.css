@@ -1,6 +1,26 @@
+.choices-grid {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  justify-items: center;
+  background: rgba(255,255,255,0.8);
+  padding: 20px 0;
+  z-index: 100;
+}
 
+.choices-grid button {
+  padding: 22px 54px;
+  font-size: 2em;
+  cursor: pointer;
+  border-radius: 12px;
+}
 body{
   overflow-y: auto;
+  margin: 0%;
   background: linear-gradient(90deg, rgb(0, 255, 183),rgb(0, 0, 0), rgb(255, 0, 72))
 }
 header{
@@ -8,6 +28,7 @@ header{
 }
 h1{
   color: #ffffff;
+  margin: 0%;
 }
 .Flex1 {
   display: flex;
@@ -29,6 +50,7 @@ a {
   background-color: rgba(240, 248, 255, 0.288);
   cursor: pointer;
   text-decoration: none;
+   border-radius: 10px;
   margin: 10px
 }
 
@@ -36,16 +58,45 @@ a {
   background-color: black;
   border-color: white;
   color: white;
-  
    box-shadow:
     0 1px 0 #000,
     0 -1px 0 #000,
     1px 0 0 #000,
     -1px 0 0 #000;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.1);
 }
 .Flex1 a{
   color: #000;
 }
 .Flex1>:hover a{
  color: white;
+}
+
+.narrow {
+  width: 600px;
+  font-size: 2em;
+}
+.right-image {
+  margin-left: 0px;
+  max-width: 500px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.content .narrow {
+  flex: 1;
+}
+p{
+ border: #000 solid 2px;
+ background-color: #ffffff61;
+ color: black;
+ font-size: 20px;
 }

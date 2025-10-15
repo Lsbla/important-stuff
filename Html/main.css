@@ -15,7 +15,6 @@ h1{
   justify-content: center;
   margin-top: 25px;
   align-items: center;
-  text-decoration: none;
 }
 a {
   text-decoration: none;
@@ -26,6 +25,7 @@ a {
   background-color: rgba(240, 248, 255, 0.288);
   cursor: pointer;
   text-decoration: none;
+  border-radius: 10px;
   margin: 10px
 }
 
@@ -33,12 +33,13 @@ a {
   background-color: black;
   border-color: white;
   color: white;
-  
    box-shadow:
     0 1px 0 #000,
     0 -1px 0 #000,
     1px 0 0 #000,
     -1px 0 0 #000;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.1);
 }
 .Flex1 a{
   color: #000;
@@ -49,7 +50,15 @@ a {
 body {
   background-image: url(alaska-top-attractions-tracy-arm-fjord.jpg);
   background-repeat: no-repeat, repeat;
-  text-decoration: none;
   margin: 0%;
   background-size: cover
+}
+placeholder_video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
 }
