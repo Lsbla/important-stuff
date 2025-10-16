@@ -1,23 +1,4 @@
-.choices-grid {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  justify-items: center;
-  background: rgba(255,255,255,0.8);
-  padding: 20px 0;
-  z-index: 100;
-}
 
-.choices-grid button {
-  padding: 22px 54px;
-  font-size: 2em;
-  cursor: pointer;
-  border-radius: 12px;
-}
 body{
   overflow-y: auto;
   margin: 0%;
@@ -99,4 +80,24 @@ p{
  background-color: #ffffff61;
  color: black;
  font-size: 20px;
+}
+.choices-grid {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  justify-items: center;
+  background: rgba(255,255,255,0.8);
+  padding: 20px 0;
+  z-index: 100;
+}
+
+.choices-grid button {
+  padding: 22px 54px;
+  font-size: 2em;
+  cursor: pointer;
+  border-radius: 12px;
 }
